@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -14,10 +13,6 @@ void *malloc_checked(unsigned int b)
 
 	c = malloc(b);
 	if (c == NULL)
-	{
-		printf("cant allocate bytes\n");
 		exit(98);
-	}
-
 	return (c);
 }
